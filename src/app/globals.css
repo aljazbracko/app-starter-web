@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+  /* Blue palette */
+  --clr-blue-10: #e6f4ff;
+  --clr-blue-20: #bae0ff;
+  --clr-blue-30: #91caff;
+  --clr-blue-40: #69b1ff;
+  --clr-blue-50: #1890ff;
+  --clr-blue-60: #096dd9;
+  --clr-blue-70: #0050b3;
+  --clr-blue: #1890ff;
+
+  /* Neutral palette */
+  --clr-neutral-10: #fafafa;
+  --clr-neutral-20: #f5f5f5;
+  --clr-neutral-30: #f0f0f0;
+  --clr-neutral-40: #d9d9d9;
+  --clr-neutral-50: #bfbfbf;
+  --clr-neutral-60: #8c8c8c;
+  --clr-neutral-70: #595959;
+  --clr-neutral-80: #262626;
+  --clr-neutral-90: #1a1a1a;
+
+  /* Red palette */
+  --clr-red-10: #fff1f0;
+  --clr-red-20: #ffccc7;
+  --clr-red-50: #ff4d4f;
+  --clr-red-60: #cf1322;
+
+  /* White */
+  --clr-white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  color: var(--clr-neutral-90);
+  background-color: var(--clr-neutral-10);
+}
+
+/* Auth Pages Styles */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-box {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12), 0 1.5px 4px rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 32px 24px;
+  min-width: 340px;
+  background-color: var(--clr-white);
+}
+
+.auth-switch-text {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.auth-link {
+  color: var(--clr-blue);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.auth-link:hover {
+  color: var(--clr-blue-60);
+}
+
+/* Header Styles */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: var(--clr-white);
+  border-bottom: 1px solid var(--clr-neutral-30);
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--clr-blue-50) 0%, var(--clr-blue-60) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon {
+  font-size: 20px;
+  color: var(--clr-white);
+}
+
+.logo-text {
+  font-size: 20px;
+  color: var(--clr-neutral-90);
+}
+
+.user-icon {
+  color: var(--clr-blue-50);
+  font-size: 16px;
+}
+
+.user-name {
+  color: var(--clr-neutral-90);
+  font-size: 14px;
+}
+
